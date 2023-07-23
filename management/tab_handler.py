@@ -8,5 +8,5 @@ def calculate_tab(products):
         price = Decimal(product.get('price', 0))
         total_price = (total_price + price) * amount
 
-    total_price_str = f"subtotal: R${total_price:.2f}"
+    total_price_str = f"subtotal: ${total_price:.2f}"
     return {"subtotal": f"${total_price:.2f}"}
