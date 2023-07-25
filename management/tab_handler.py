@@ -1,12 +1,11 @@
-from decimal import Decimal
+from menu import products
 
 
-def calculate_tab(products):
-    total_price = Decimal(0)
-    for product in products:
-        amount = product.get('amount')
-        price = Decimal(product.get('price', 0))
-        total_price = (total_price + price) * amount
+def calculate_tab(list):
+    total_price = 0
+    for item in list:
+        for product in products:
+            if product.get("_id") == item.get("_id"):
+                total_price += item.get('amount') * product.get('price')
 
-    total_price_str = f"subtotal: ${total_price:.2f}"
-    return {"subtotal": f"${total_price:.2f}"}
+    return {"subtotal": f"${round(total_price, 2)}"}

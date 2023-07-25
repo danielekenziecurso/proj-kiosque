@@ -16,5 +16,8 @@ if __name__ == "__main__":
 
     # result = add_product(products, new_product)
     # print(result)
+    table_1 = [{"_id": 1, "amount": 5}, {"_id": 19, "amount": 5}]
+    result = calculate_tab(table_1)
+    print(result)
 
-    print(menu_report())
+    # print(menu_report())
