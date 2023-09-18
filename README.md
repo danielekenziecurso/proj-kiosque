@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1> M5 - Kiosque </h1>
 
 <h2> Como rodar os testes localmente </h2>
@@ -70,3 +71,6 @@ Para rodar todos os testes da aplicação de uma vez, execute o seguinte comando
 ```shell
 pytest --testdox
 ```
+=======
+# proj-kiosque
+>>>>>>> 7973f232234accea7b8e650e11e63251532a3205
